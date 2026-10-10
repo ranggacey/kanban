@@ -120,12 +120,17 @@ export function Logo({ className }: { className?: string }) {
   return (
     <span
       className={cn(
-        "font-display text-2xl font-semibold tracking-tight text-ink",
+        "inline-flex items-center gap-2 font-display text-2xl font-semibold tracking-tight text-ink",
         className,
       )}
     >
+      <img
+        src="/icons/logo-mark.png"
+        alt="Logo Geser"
+        className="h-9 w-9 object-contain"
+      />
       Geser
-      <span className="text-gold">.</span>
+      <span className="-ml-2 text-gold">.</span>
     </span>
   );
 }

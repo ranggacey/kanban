@@ -61,17 +61,17 @@ function HeroBoard() {
 
 const features = [
   {
-    emoji: "🖱️",
+    icon: "/icons/icon-drag.png",
     title: "Drag & drop yang halus",
     desc: "Geser kartu antar kolom dengan animasi lembut. Urutan tersimpan otomatis ke database.",
   },
   {
-    emoji: "⚡",
+    icon: "/icons/icon-realtime.png",
     title: "Realtime bawaan",
     desc: "Buka papan yang sama di dua tab — perubahan muncul seketika tanpa refresh.",
   },
   {
-    emoji: "🏷️",
+    icon: "/icons/icon-label.png",
     title: "Label & tenggat",
     desc: "Beri label warna, deskripsi, dan tanggal tenggat supaya tidak ada yang terlewat.",
   },
@@ -162,8 +162,13 @@ export default function LandingPage() {
                 key={f.title}
                 className="rounded-2xl border border-line bg-surface p-6 shadow-warm transition-all duration-200 hover:-translate-y-1 hover:shadow-lift"
               >
-                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-sage-soft text-2xl">
-                  <span aria-hidden="true">{f.emoji}</span>
+                <div className="mb-4 flex h-14 w-14 items-center justify-center">
+                  <img
+                    src={f.icon}
+                    alt=""
+                    aria-hidden="true"
+                    className="h-14 w-14 object-contain transition-transform duration-300 hover:rotate-6 hover:scale-110"
+                  />
                 </div>
                 <h3 className="font-display text-xl font-medium text-ink">
                   {f.title}
@@ -178,8 +183,19 @@ export default function LandingPage() {
       </main>
 
       <footer className="relative z-10 border-t border-line/70 py-8">
-        <p className="text-center text-sm text-muted">
-          Dibuat oleh Rangga Figo Hidayat — portofolio Next.js + Supabase
+        <p className="flex items-center justify-center gap-1.5 text-center text-sm text-muted">
+          Dibuat oleh
+          <a
+            href="https://github.com/ranggacey"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-ink underline decoration-gold decoration-2 underline-offset-4 transition-colors hover:text-sage-dark"
+          >
+            Rangga
+          </a>
+          <span aria-hidden="true" className="text-gold">
+            ✦
+          </span>
         </p>
       </footer>
     </div>
