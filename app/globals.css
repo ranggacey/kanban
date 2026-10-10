@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  /* Frieren-inspired palette — soft, calm, ethereal */
+  --color-cream: #faf6ee;
+  --color-surface: #fffdf8;
+  --color-sage: #7c8f6e;
+  --color-sage-dark: #6b7d5d;
+  --color-sage-soft: #e9efe2;
+  --color-dusty: #7a93a6;
+  --color-dusty-soft: #e3ebf1;
+  --color-ink: #33302a;
+  --color-muted: #8a8478;
+  --color-line: #e8e0d2;
+  --color-gold: #c9a96a;
+  --color-gold-soft: #f4ecda;
+
+  --shadow-warm: 0 10px 34px -14px rgb(51 48 42 / 0.18);
+  --shadow-lift: 0 18px 48px -18px rgb(51 48 42 / 0.28);
+
+  --animate-float-slow: float 9s ease-in-out infinite;
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@theme inline {
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-jakarta);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+body {
+  @apply bg-cream text-ink font-sans antialiased;
+}
+
+::selection {
+  background: var(--color-sage-soft);
+}
+
+/* Gentle scrollbar to match the aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-line);
+  border-radius: 999px;
+  border: 2px solid var(--color-cream);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-muted);
+}
