@@ -183,19 +183,16 @@ export default function LandingPage() {
       </main>
 
       <footer className="relative z-10 border-t border-line/70 py-8">
-        <p className="flex items-center justify-center gap-1.5 text-center text-sm text-muted">
-          Dibuat oleh
+        <p className="text-center text-sm text-muted">
+          Create by{" "}
           <a
             href="https://github.com/ranggacey"
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-ink underline decoration-gold decoration-2 underline-offset-4 transition-colors hover:text-sage-dark"
           >
-            Rangga
+            ranggacey
           </a>
-          <span aria-hidden="true" className="text-gold">
-            ✦
-          </span>
         </p>
       </footer>
     </div>
