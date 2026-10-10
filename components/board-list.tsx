@@ -162,8 +162,14 @@ export default function BoardList({
                 </p>
               )}
               <div className="mt-5 flex items-center justify-between">
-                <span className="text-xs font-medium uppercase tracking-wider text-muted">
-                  Buka papan →
+                <span className="inline-flex items-center gap-1 text-xs font-medium uppercase tracking-wider text-muted">
+                  Buka papan
+                  <img
+                    src="/icons/icon-arrow-right.png"
+                    alt=""
+                    aria-hidden="true"
+                    className="h-4 w-4 object-contain"
+                  />
                 </span>
                 <button
                   type="button"

@@ -144,9 +144,18 @@ function LoginForm() {
       </form>
 
       <p className="mt-6 text-center text-sm text-muted">
-        <Link href="/" className="hover:text-ink hover:underline">
-          ← Kembali ke beranda
-        </Link>
+        <Link
+            href="/"
+            className="inline-flex items-center gap-1.5 hover:text-ink hover:underline"
+          >
+            <img
+              src="/icons/icon-arrow-left.png"
+              alt=""
+              aria-hidden="true"
+              className="h-4 w-4 object-contain"
+            />
+            Kembali ke beranda
+          </Link>
       </p>
     </div>
   );

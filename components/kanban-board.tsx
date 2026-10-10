@@ -370,9 +370,15 @@ export default function KanbanBoard({
         <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-3">
           <Link
             href="/boards"
-            className="rounded-lg px-2 py-1 text-sm font-medium text-muted transition-colors hover:bg-black/5 hover:text-ink"
+            className="inline-flex items-center gap-1.5 rounded-lg px-2 py-1 text-sm font-medium text-muted transition-colors hover:bg-black/5 hover:text-ink"
           >
-            ← Papan
+            <img
+              src="/icons/icon-arrow-left.png"
+              alt=""
+              aria-hidden="true"
+              className="h-4 w-4 object-contain"
+            />
+            Papan
           </Link>
           <div className="min-w-0 flex-1">
             <h1 className="truncate font-display text-2xl font-semibold tracking-tight text-ink">
