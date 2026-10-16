@@ -6,6 +6,7 @@ import {
   DndContext,
   DragOverlay,
   PointerSensor,
+  TouchSensor,
   useSensor,
   useSensors,
   closestCorners,
@@ -48,6 +49,11 @@ export default function KanbanBoard({
 
   const sensors = useSensors(
     useSensor(PointerSensor, { activationConstraint: { distance: 8 } }),
+    // Di HP: tahan kartu/kolom ~250ms untuk mulai geser,
+    // sentuh biasa tetap untuk scroll seperti biasa.
+    useSensor(TouchSensor, {
+      activationConstraint: { delay: 250, tolerance: 8 },
+    }),
   );
 
   /* ---------- derived: cards grouped by column, ordered ---------- */
