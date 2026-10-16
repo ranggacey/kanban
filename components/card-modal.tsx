@@ -159,7 +159,7 @@ export default function CardModal({ card, onClose, onSave, onDelete }: Props) {
         </div>
       </div>
 
-      <div className="mt-6 flex items-center justify-between gap-3 border-t border-line pt-5">
+      <div className="mt-6 flex flex-wrap items-center justify-between gap-3 border-t border-line pt-5">
         <Button
           variant="danger"
           size="sm"

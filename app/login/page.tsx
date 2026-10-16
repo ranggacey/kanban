@@ -62,7 +62,7 @@ function LoginForm() {
   }
 
   return (
-    <div className="w-full max-w-md rounded-3xl border border-line bg-surface p-8 shadow-lift animate-fade-up">
+    <div className="w-full max-w-md rounded-3xl border border-line bg-surface p-6 shadow-lift animate-fade-up sm:p-8">
       <div className="mb-6 text-center">
         <Link href="/" aria-label="Kembali ke beranda">
           <Logo className="text-3xl" />

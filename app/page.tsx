@@ -120,7 +120,7 @@ export default function LandingPage() {
               </span>
               Papan Kanban realtime
             </p>
-            <h1 className="font-display text-5xl font-semibold leading-[1.08] tracking-tight text-ink sm:text-6xl">
+            <h1 className="font-display text-4xl font-semibold leading-[1.08] tracking-tight text-ink sm:text-6xl">
               Kerja jadi
               <br />
               lebih <span className="italic text-sage-dark">tenang</span>.

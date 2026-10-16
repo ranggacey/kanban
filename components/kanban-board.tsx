@@ -445,7 +445,7 @@ export default function KanbanBoard({
 
               {/* add column */}
               {addingColumn ? (
-                <div className="w-72 shrink-0 rounded-2xl border border-line bg-surface/70 p-3 shadow-warm animate-fade-up">
+                <div className="w-[85vw] shrink-0 rounded-2xl border border-line bg-surface/70 p-3 shadow-warm animate-fade-up sm:w-72">
                   <TextInput
                     autoFocus
                     placeholder="Nama kolom…"
@@ -485,7 +485,7 @@ export default function KanbanBoard({
                 <button
                   type="button"
                   onClick={() => setAddingColumn(true)}
-                  className="w-72 shrink-0 rounded-2xl border border-dashed border-line bg-surface/40 px-4 py-4 text-left text-sm font-medium text-muted transition-all hover:border-sage hover:text-sage-dark cursor-pointer"
+                  className="w-[85vw] shrink-0 rounded-2xl border border-dashed border-line bg-surface/40 px-4 py-4 text-left text-sm font-medium text-muted transition-all hover:border-sage hover:text-sage-dark cursor-pointer sm:w-72"
                 >
                   + Tambah kolom
                 </button>
@@ -494,13 +494,13 @@ export default function KanbanBoard({
 
             <DragOverlay dropAnimation={{ duration: 180 }}>
               {activeCard ? (
-                <div className="w-72 rotate-2 rounded-xl border border-line bg-surface px-3.5 py-3 shadow-lift">
+                <div className="w-[85vw] rotate-2 rounded-xl border border-line bg-surface px-3.5 py-3 shadow-lift sm:w-72">
                   <p className="text-[15px] font-medium text-ink">
                     {activeCard.title}
                   </p>
                 </div>
               ) : activeColumn ? (
-                <div className="w-72 rounded-2xl border border-line bg-surface/90 p-3 shadow-lift">
+                <div className="w-[85vw] rounded-2xl border border-line bg-surface/90 p-3 shadow-lift sm:w-72">
                   <p className="text-sm font-bold uppercase tracking-wide text-ink/80">
                     {activeColumn.title}
                   </p>

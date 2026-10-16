@@ -93,7 +93,7 @@ export default function KanbanColumn({
     // Outer wrapper carries the entrance animation; the inner sortable node
     // owns `transform` so the two never fight during drags.
     <div
-      className="w-72 shrink-0 animate-fade-up"
+      className="w-[85vw] shrink-0 animate-fade-up sm:w-72"
       style={{ animationDelay: `${Math.min(index, 8) * 70}ms` }}
     >
       <div
